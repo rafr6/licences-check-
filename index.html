@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>BRTA লাইসেন্স যাচাই</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: sans-serif; background: #e4e4e4; margin: 0; padding: 0; }
+    .container { max-width: 600px; margin: 80px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+    h2 { text-align: center; color: #006400; }
+    input, button { width: 100%; padding: 12px; margin-top: 10px; border-radius: 5px; border: 1px solid #ccc; }
+    button { background: #006400; color: white; font-weight: bold; border: none; cursor: pointer; }
+    #result p { text-align: left; line-height: 1.6; background: #f9f9f9; padding: 10px; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>BRTA ড্রাইভিং লাইসেন্স যাচাই</h2>
+    <input type="text" id="searchInput" placeholder="লাইসেন্স নাম্বার লিখুন যেমন: DK0897294CH0874">
+    <button onclick="searchLicense()">যাচাই করুন</button>
+    <div id="result"></div>
+  </div>
+  <script type="module" src="user.js"></script>
+</body>
+</html>

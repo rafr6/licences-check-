@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>এডমিন প্যানেল</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: sans-serif; background: #f2f2f2; padding: 0; margin: 0; }
+    .container { max-width: 600px; margin: 60px auto; background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 15px rgba(0,0,0,0.1); }
+    h2 { text-align: center; color: #d9534f; }
+    input, button { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; }
+    button { background: #d9534f; color: white; font-weight: bold; border: none; cursor: pointer; }
+    #formArea { display: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>এডমিন লগইন</h2>
+    <input type="text" id="adminUser" placeholder="ইউজারনেম">
+    <input type="password" id="adminPass" placeholder="পাসওয়ার্ড">
+    <button onclick="login()">লগইন</button>
+    <div id="formArea">
+      <input type="text" id="licenseNumber" placeholder="লাইসেন্স নাম্বার">
+      <input type="text" id="ownerName" placeholder="মালিকের নাম">
+      <input type="text" id="fatherName" placeholder="পিতার নাম">
+      <input type="text" id="dob" placeholder="জন্ম তারিখ">
+      <input type="text" id="licenseType" placeholder="লাইসেন্স ধরন">
+      <input type="text" id="issueDate" placeholder="ইস্যু তারিখ">
+      <input type="text" id="expiryDate" placeholder="মেয়াদ শেষ">
+      <button onclick="addLicense()">যুক্ত করুন</button>
+      <p id="msg"></p>
+    </div>
+  </div>
+  <script type="module" src="admin.js"></script>
+</body>
+</html>
